@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  padding: 20px;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #ff4d73;
+}
+
+.option-card {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 12px;
+  position: relative;
+}
+
+.option-card input[type="radio"] {
+  display: none;
+}
+
+.option-label {
+  display: block;
+  cursor: pointer;
+}
+
+.option-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  background-color: #ff4d73;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.new-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+}
+
+.variants {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff5f7;
+  border-radius: 5px;
+}
+
+.variant-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+#addCartBtn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff4d73;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#addCartBtn:hover {
+  background-color: #e43e63;
+}
+
+/* Checked radio card style */
+.option-card input[type="radio"]:checked + .option-label {
+  border: 2px solid #ff4d73;
+}
+

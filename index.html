@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BOGO Units Selector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h2>YAY! It's BOGO</h2>
+    <form id="bogoForm">
+      <!-- 1 Unit -->
+      <div class="option-card">
+        <input type="radio" id="unit1" name="units" value="1" data-price="10" checked>
+        <label for="unit1" class="option-label">
+          <div class="option-info">
+            <div>1 Unit <span class="badge">10% Off</span></div>
+            <div class="old-price">$24.00 USD</div>
+            <div class="new-price">$10.00 USD</div>
+            <div class="description">Standard Price</div>
+          </div>
+        </label>
+      </div>
+
+      <!-- 2 Units -->
+      <div class="option-card">
+        <input type="radio" id="unit2" name="units" value="2" data-price="18">
+        <label for="unit2" class="option-label">
+          <div class="option-info">
+            <div>2 Units <span class="badge">20% Off</span></div>
+            <div class="old-price">$24.00 USD</div>
+            <div class="new-price">$18.00 USD</div>
+            <div class="description">Most Popular</div>
+          </div>
+        </label>
+        <!-- variants for unit2 -->
+        <div class="variants variants-2">
+          <div class="variant-row">
+            <div>#1 Size:</div>
+            <select name="size2-1">
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+            <div>Colour:</div>
+            <select name="color2-1">
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </div>
+          <div class="variant-row">
+            <div>#2 Size:</div>
+            <select name="size2-2">
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+            <div>Colour:</div>
+            <select name="color2-2">
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Units -->
+      <div class="option-card">
+        <input type="radio" id="unit3" name="units" value="3" data-price="24">
+        <label for="unit3" class="option-label">
+          <div class="option-info">
+            <div>3 Units <span class="badge">30% Off</span></div>
+            <div class="old-price">$36.00 USD</div>
+            <div class="new-price">$24.00 USD</div>
+            <div class="description"></div>
+          </div>
+        </label>
+        <!-- variants for unit3 -->
+        <div class="variants variants-3">
+          <div class="variant-row">
+            <div>#1 Size:</div>
+            <select name="size3-1">
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+            <div>Colour:</div>
+            <select name="color3-1">
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </div>
+          <div class="variant-row">
+            <div>#2 Size:</div>
+            <select name="size3-2">
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+            <div>Colour:</div>
+            <select name="color3-2">
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </div>
+          <div class="variant-row">
+            <div>#3 Size:</div>
+            <select name="size3-3">
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+            <div>Colour:</div>
+            <select name="color3-3">
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="total-row">
+        <span>Free Delivery</span>
+        <span>Total: <strong id="totalPrice">$10.00 USD</strong></span>
+      </div>
+
+      <button type="button" id="addCartBtn">+ Add to Cart</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
